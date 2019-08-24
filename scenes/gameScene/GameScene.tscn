@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/player/Player.tscn" type="PackedScene" id=1]
+
+[node name="MainLevel" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+scale = Vector2( 0.75, 0.75 )
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PoolVector2Array( -405.466, 36.214, -268.78, 164.531, -51.1984, 158.952, 208.226, 97.5832, 319.807, 234.269, 423.018, 315.165, 529.02, 186.848, 660.127, 8.31885, 821.918, 13.8979, 1008.82, 217.532, 1014.39, 248.217, 902.814, 476.957, 685.232, 661.064, 417.439, 781.013, 132.909, 814.487, -279.938, 677.801, -692.786, 753.118, -915.947, 747.539, -899.21, 379.324, -784.84, -80.9455, -854.577, -220.421, -678.838, -365.476 )
+texture_mode = 0

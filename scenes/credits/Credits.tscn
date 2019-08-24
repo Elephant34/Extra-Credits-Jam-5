@@ -1,0 +1,146 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://art/fonts/PressStart2P-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://art/fonts/mainFont.tres" type="DynamicFont" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 19
+font_data = ExtResource( 1 )
+
+[node name="Credits" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 60
+custom_constants/margin_top = 20
+custom_constants/margin_left = 50
+
+[node name="Main" type="VBoxContainer" parent="."]
+margin_left = 50.0
+margin_top = 20.0
+margin_right = 964.0
+margin_bottom = 600.0
+custom_constants/separation = 30
+
+[node name="Title" type="Label" parent="Main"]
+margin_right = 914.0
+margin_bottom = 50.0
+custom_fonts/font = SubResource( 1 )
+text = "Credits:"
+
+[node name="CodeCredits" type="VBoxContainer" parent="Main"]
+editor/display_folded = true
+margin_top = 80.0
+margin_right = 914.0
+margin_bottom = 173.0
+custom_constants/separation = 20
+
+[node name="Label" type="Label" parent="Main/CodeCredits"]
+margin_right = 914.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Coders:"
+
+[node name="Label2" type="Label" parent="Main/CodeCredits"]
+margin_top = 39.0
+margin_right = 914.0
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 2 )
+text = "    Elephant"
+
+[node name="Label3" type="Label" parent="Main/CodeCredits"]
+margin_top = 76.0
+margin_right = 914.0
+margin_bottom = 93.0
+custom_fonts/font = ExtResource( 2 )
+text = "    Cireeeee"
+
+[node name="ArtCredits" type="VBoxContainer" parent="Main"]
+editor/display_folded = true
+margin_top = 203.0
+margin_right = 914.0
+margin_bottom = 259.0
+custom_constants/separation = 20
+
+[node name="Label" type="Label" parent="Main/ArtCredits"]
+margin_right = 914.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Graphics:"
+
+[node name="Label2" type="Label" parent="Main/ArtCredits"]
+margin_top = 39.0
+margin_right = 914.0
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 2 )
+text = "    Henri I"
+
+[node name="AudioCredits" type="VBoxContainer" parent="Main"]
+editor/display_folded = true
+margin_top = 289.0
+margin_right = 914.0
+margin_bottom = 345.0
+custom_constants/separation = 20
+
+[node name="Label" type="Label" parent="Main/AudioCredits"]
+margin_right = 914.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Audio:"
+
+[node name="Label2" type="Label" parent="Main/AudioCredits"]
+margin_top = 39.0
+margin_right = 914.0
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 2 )
+text = "    Bells"
+
+[node name="WritingCredits" type="VBoxContainer" parent="Main"]
+editor/display_folded = true
+margin_top = 375.0
+margin_right = 914.0
+margin_bottom = 431.0
+custom_constants/separation = 20
+
+[node name="Label" type="Label" parent="Main/WritingCredits"]
+margin_right = 914.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Writing and Ideas:"
+
+[node name="Label2" type="Label" parent="Main/WritingCredits"]
+margin_top = 39.0
+margin_right = 914.0
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 2 )
+text = "    All of the above"
+
+[node name="SpecialThanks" type="VBoxContainer" parent="Main"]
+editor/display_folded = true
+margin_top = 461.0
+margin_right = 914.0
+margin_bottom = 554.0
+custom_constants/separation = 20
+
+[node name="Label" type="Label" parent="Main/SpecialThanks"]
+margin_right = 914.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Special Thanks:"
+
+[node name="Label2" type="Label" parent="Main/SpecialThanks"]
+margin_top = 39.0
+margin_right = 914.0
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 2 )
+text = "    Godot 3.1 Editor - godotengine.org/license"
+
+[node name="Label3" type="Label" parent="Main/SpecialThanks"]
+margin_top = 76.0
+margin_right = 914.0
+margin_bottom = 93.0
+custom_fonts/font = ExtResource( 2 )
+text = "    CodeMan38 for the Press Start 2P font"

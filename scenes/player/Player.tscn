@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://scenes/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://art/player/walk left/Player38.png" type="Texture" id=2]
@@ -84,8 +84,6 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
-
 [node name="Player" type="KinematicBody2D"]
 collision_mask = 0
 script = ExtResource( 1 )
@@ -94,5 +92,5 @@ script = ExtResource( 1 )
 frames = SubResource( 1 )
 animation = "RightUp"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 2 )
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -20.3419, 80.2027, 20.1438, 80.009, 20.173, 30.0049, 30.261, 30.0049, 30.261, -10.3472, 40.1344, -20.2205, 40.5637, -60.1433, 19.9584, -79.6755, -19.5352, -80.1048, -40.1405, -60.1434, -40.3551, -20.8645, -29.6232, -10.7764, -30.0525, 30.0049, -20.3937, 30.2196 )

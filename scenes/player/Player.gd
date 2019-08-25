@@ -33,5 +33,13 @@ func _physics_process(delta):
 	get_input()
 	var collision = move_and_slide(velocity)
 	globals.player_pos = self.position
+	
 	$test_pos_label.text = str(self.position)
 
+
+func _on_GhostAurorStop_area_entered(area):
+	globals.ghost_moving = false
+
+
+func _on_GhostAurorStart_area_exited(area):
+	globals.ghost_moving = true

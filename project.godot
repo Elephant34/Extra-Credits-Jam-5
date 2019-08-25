@@ -60,6 +60,7 @@ pause={
 
 2d_render/layer_1="player"
 2d_physics/layer_1="player"
+2d_physics/layer_2="ghost"
 
 [rendering]
 

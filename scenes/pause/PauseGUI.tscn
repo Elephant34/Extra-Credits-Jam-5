@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/pause/PauseGUI.gd" type="Script" id=1]
+
+[node name="PauseGUI" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Main" type="VBoxContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="Title" type="CenterContainer" parent="Main"]
+margin_right = 1024.0
+
+[node name="TextureRect" type="TextureRect" parent="Main/Title"]
+margin_left = 512.0
+margin_right = 512.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Main"]
+margin_top = 4.0
+margin_right = 1024.0
+margin_bottom = 104.0
+custom_constants/margin_top = 40
+
+[node name="CenterContainer" type="CenterContainer" parent="Main/MarginContainer"]
+margin_top = 40.0
+margin_right = 1024.0
+margin_bottom = 100.0
+
+[node name="Control Buttons" type="VBoxContainer" parent="Main/MarginContainer/CenterContainer"]
+margin_left = 512.0
+margin_right = 512.0
+margin_bottom = 60.0
+custom_constants/separation = 30
+
+[node name="ResumeButton" type="TextureButton" parent="Main/MarginContainer/CenterContainer/Control Buttons"]
+
+[node name="CreditsButton" type="TextureButton" parent="Main/MarginContainer/CenterContainer/Control Buttons"]
+margin_top = 30.0
+margin_bottom = 30.0
+
+[node name="QuitButton" type="TextureButton" parent="Main/MarginContainer/CenterContainer/Control Buttons"]
+margin_top = 60.0
+margin_bottom = 60.0

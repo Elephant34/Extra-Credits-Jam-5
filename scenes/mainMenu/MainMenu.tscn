@@ -69,5 +69,6 @@ margin_right = 169.0
 margin_bottom = 183.0
 texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 8 )
+[connection signal="pressed" from="Main/MarginContainer/CenterContainer/Control Buttons/PlayButton" to="." method="_on_PlayButton_pressed"]
 [connection signal="pressed" from="Main/MarginContainer/CenterContainer/Control Buttons/CreditsButton" to="." method="_on_CreditsButton_pressed"]
 [connection signal="pressed" from="Main/MarginContainer/CenterContainer/Control Buttons/QuitButton" to="." method="_on_QuitButton_pressed"]

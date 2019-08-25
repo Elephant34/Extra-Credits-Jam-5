@@ -32,4 +32,6 @@ func get_input():
 func _physics_process(delta):
 	get_input()
 	var collision = move_and_slide(velocity)
+	globals.player_pos = self.position
+	$test_pos_label.text = str(self.position)
 

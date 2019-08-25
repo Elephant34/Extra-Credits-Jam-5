@@ -24,7 +24,7 @@ func get_input():
 
 	velocity = velocity.normalized() * speed
 	
-	if not movement:
+	if not movement or ("Left" in movement and "Right" in movement) or ("Up" in movement and "Down" in movement):
 		$AnimatedSprite.stop()
 	else:
 		$AnimatedSprite.play(movement)

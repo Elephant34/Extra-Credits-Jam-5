@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var following_player = true
+var following_player = false
 
 export var speed = 195
 
